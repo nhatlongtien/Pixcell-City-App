@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5331D6E924767A10005DC6E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5331D6E824767A10005DC6E9 /* AppDelegate.swift */; };
+		5331D6EB24767A10005DC6E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5331D6EA24767A10005DC6E9 /* SceneDelegate.swift */; };
+		5331D6ED24767A10005DC6E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5331D6EC24767A10005DC6E9 /* ViewController.swift */; };
+		5331D6F024767A10005DC6E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5331D6EE24767A10005DC6E9 /* Main.storyboard */; };
+		5331D6F224767A14005DC6E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5331D6F124767A14005DC6E9 /* Assets.xcassets */; };
+		5331D6F524767A14005DC6E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5331D6F324767A14005DC6E9 /* LaunchScreen.storyboard */; };
+		567E4F66094742922820BA20 /* Pods_Pixcell_City.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4654EBB22E04474D3F96ABE7 /* Pods_Pixcell_City.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C9DE08E74BA53503E54D664 /* Pods-Pixcell City.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pixcell City.debug.xcconfig"; path = "Target Support Files/Pods-Pixcell City/Pods-Pixcell City.debug.xcconfig"; sourceTree = "<group>"; };
+		4654EBB22E04474D3F96ABE7 /* Pods_Pixcell_City.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pixcell_City.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		529DFB9328937E7B281D59E5 /* Pods-Pixcell City.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pixcell City.release.xcconfig"; path = "Target Support Files/Pods-Pixcell City/Pods-Pixcell City.release.xcconfig"; sourceTree = "<group>"; };
+		5331D6E524767A0F005DC6E9 /* Pixcell City.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pixcell City.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5331D6E824767A10005DC6E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5331D6EA24767A10005DC6E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5331D6EC24767A10005DC6E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5331D6EF24767A10005DC6E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5331D6F124767A14005DC6E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5331D6F424767A14005DC6E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5331D6F624767A14005DC6E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5331D6E224767A0F005DC6E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				567E4F66094742922820BA20 /* Pods_Pixcell_City.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		310DEF9414E039DA75560B14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C9DE08E74BA53503E54D664 /* Pods-Pixcell City.debug.xcconfig */,
+				529DFB9328937E7B281D59E5 /* Pods-Pixcell City.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5331D6DC24767A0F005DC6E9 = {
+			isa = PBXGroup;
+			children = (
+				5331D6E724767A0F005DC6E9 /* Pixcell City */,
+				5331D6E624767A0F005DC6E9 /* Products */,
+				310DEF9414E039DA75560B14 /* Pods */,
+				FB07485594585768BC98F8DF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5331D6E624767A0F005DC6E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5331D6E524767A0F005DC6E9 /* Pixcell City.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5331D6E724767A0F005DC6E9 /* Pixcell City */ = {
+			isa = PBXGroup;
+			children = (
+				5331D6E824767A10005DC6E9 /* AppDelegate.swift */,
+				5331D6EA24767A10005DC6E9 /* SceneDelegate.swift */,
+				5331D6EC24767A10005DC6E9 /* ViewController.swift */,
+				5331D6EE24767A10005DC6E9 /* Main.storyboard */,
+				5331D6F124767A14005DC6E9 /* Assets.xcassets */,
+				5331D6F324767A14005DC6E9 /* LaunchScreen.storyboard */,
+				5331D6F624767A14005DC6E9 /* Info.plist */,
+			);
+			path = "Pixcell City";
+			sourceTree = "<group>";
+		};
+		FB07485594585768BC98F8DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4654EBB22E04474D3F96ABE7 /* Pods_Pixcell_City.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5331D6E424767A0F005DC6E9 /* Pixcell City */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5331D6F924767A14005DC6E9 /* Build configuration list for PBXNativeTarget "Pixcell City" */;
+			buildPhases = (
+				2179DD1D30B96B316D4EF0E1 /* [CP] Check Pods Manifest.lock */,
+				5331D6E124767A0F005DC6E9 /* Sources */,
+				5331D6E224767A0F005DC6E9 /* Frameworks */,
+				5331D6E324767A0F005DC6E9 /* Resources */,
+				76241B277DD184289EAABFCB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pixcell City";
+			productName = "Pixcell City";
+			productReference = 5331D6E524767A0F005DC6E9 /* Pixcell City.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5331D6DD24767A0F005DC6E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = NGUYENLONGTIEN;
+				TargetAttributes = {
+					5331D6E424767A0F005DC6E9 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 5331D6E024767A0F005DC6E9 /* Build configuration list for PBXProject "Pixcell City" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5331D6DC24767A0F005DC6E9;
+			productRefGroup = 5331D6E624767A0F005DC6E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5331D6E424767A0F005DC6E9 /* Pixcell City */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5331D6E324767A0F005DC6E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5331D6F524767A14005DC6E9 /* LaunchScreen.storyboard in Resources */,
+				5331D6F224767A14005DC6E9 /* Assets.xcassets in Resources */,
+				5331D6F024767A10005DC6E9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2179DD1D30B96B316D4EF0E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pixcell City-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76241B277DD184289EAABFCB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pixcell City/Pods-Pixcell City-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pixcell City/Pods-Pixcell City-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pixcell City/Pods-Pixcell City-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5331D6E124767A0F005DC6E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5331D6ED24767A10005DC6E9 /* ViewController.swift in Sources */,
+				5331D6E924767A10005DC6E9 /* AppDelegate.swift in Sources */,
+				5331D6EB24767A10005DC6E9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5331D6EE24767A10005DC6E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5331D6EF24767A10005DC6E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5331D6F324767A14005DC6E9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5331D6F424767A14005DC6E9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5331D6F724767A14005DC6E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5331D6F824767A14005DC6E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5331D6FA24767A14005DC6E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C9DE08E74BA53503E54D664 /* Pods-Pixcell City.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RRJMKAXD2H;
+				INFOPLIST_FILE = "Pixcell City/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nhatlongtien.Pixcell-City";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5331D6FB24767A14005DC6E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 529DFB9328937E7B281D59E5 /* Pods-Pixcell City.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RRJMKAXD2H;
+				INFOPLIST_FILE = "Pixcell City/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nhatlongtien.Pixcell-City";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5331D6E024767A0F005DC6E9 /* Build configuration list for PBXProject "Pixcell City" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5331D6F724767A14005DC6E9 /* Debug */,
+				5331D6F824767A14005DC6E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5331D6F924767A14005DC6E9 /* Build configuration list for PBXNativeTarget "Pixcell City" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5331D6FA24767A14005DC6E9 /* Debug */,
+				5331D6FB24767A14005DC6E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5331D6DD24767A0F005DC6E9 /* Project object */;
+}
