@@ -58,5 +58,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>This app to use your location to show a photo around your place!</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This app to use your location to show a photo around your place!</string>
 </dict>
 </plist>

@@ -3,16 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5331D6E924767A10005DC6E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5331D6E824767A10005DC6E9 /* AppDelegate.swift */; };
 		5331D6EB24767A10005DC6E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5331D6EA24767A10005DC6E9 /* SceneDelegate.swift */; };
-		5331D6ED24767A10005DC6E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5331D6EC24767A10005DC6E9 /* ViewController.swift */; };
+		5331D6ED24767A10005DC6E9 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5331D6EC24767A10005DC6E9 /* MapVC.swift */; };
 		5331D6F024767A10005DC6E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5331D6EE24767A10005DC6E9 /* Main.storyboard */; };
 		5331D6F224767A14005DC6E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5331D6F124767A14005DC6E9 /* Assets.xcassets */; };
 		5331D6F524767A14005DC6E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5331D6F324767A14005DC6E9 /* LaunchScreen.storyboard */; };
+		533F57AA2480C1B600D2BC90 /* DropablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533F57A92480C1B600D2BC90 /* DropablePin.swift */; };
+		53E6B63C248272E10013FD3D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E6B63B248272E10013FD3D /* Constants.swift */; };
+		53E6B63E248294770013FD3D /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E6B63D248294770013FD3D /* PhotoCell.swift */; };
+		53E6B6402483672F0013FD3D /* PopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E6B63F2483672F0013FD3D /* PopVC.swift */; };
 		567E4F66094742922820BA20 /* Pods_Pixcell_City.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4654EBB22E04474D3F96ABE7 /* Pods_Pixcell_City.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,11 +27,15 @@
 		5331D6E524767A0F005DC6E9 /* Pixcell City.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pixcell City.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5331D6E824767A10005DC6E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5331D6EA24767A10005DC6E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5331D6EC24767A10005DC6E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5331D6EC24767A10005DC6E9 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		5331D6EF24767A10005DC6E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5331D6F124767A14005DC6E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5331D6F424767A14005DC6E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5331D6F624767A14005DC6E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		533F57A92480C1B600D2BC90 /* DropablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropablePin.swift; sourceTree = "<group>"; };
+		53E6B63B248272E10013FD3D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		53E6B63D248294770013FD3D /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		53E6B63F2483672F0013FD3D /* PopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +56,6 @@
 				0C9DE08E74BA53503E54D664 /* Pods-Pixcell City.debug.xcconfig */,
 				529DFB9328937E7B281D59E5 /* Pods-Pixcell City.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,15 +80,43 @@
 		5331D6E724767A0F005DC6E9 /* Pixcell City */ = {
 			isa = PBXGroup;
 			children = (
+				53E6B63A248272C40013FD3D /* Utilities */,
+				53E6B639248272930013FD3D /* Controllers */,
+				533F57A82480C19A00D2BC90 /* View */,
 				5331D6E824767A10005DC6E9 /* AppDelegate.swift */,
 				5331D6EA24767A10005DC6E9 /* SceneDelegate.swift */,
-				5331D6EC24767A10005DC6E9 /* ViewController.swift */,
 				5331D6EE24767A10005DC6E9 /* Main.storyboard */,
 				5331D6F124767A14005DC6E9 /* Assets.xcassets */,
 				5331D6F324767A14005DC6E9 /* LaunchScreen.storyboard */,
 				5331D6F624767A14005DC6E9 /* Info.plist */,
 			);
 			path = "Pixcell City";
+			sourceTree = "<group>";
+		};
+		533F57A82480C19A00D2BC90 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				533F57A92480C1B600D2BC90 /* DropablePin.swift */,
+				53E6B63D248294770013FD3D /* PhotoCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53E6B639248272930013FD3D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5331D6EC24767A10005DC6E9 /* MapVC.swift */,
+				53E6B63F2483672F0013FD3D /* PopVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		53E6B63A248272C40013FD3D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				53E6B63B248272E10013FD3D /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		FB07485594585768BC98F8DF /* Frameworks */ = {
@@ -207,8 +242,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5331D6ED24767A10005DC6E9 /* ViewController.swift in Sources */,
+				53E6B63C248272E10013FD3D /* Constants.swift in Sources */,
+				533F57AA2480C1B600D2BC90 /* DropablePin.swift in Sources */,
+				53E6B6402483672F0013FD3D /* PopVC.swift in Sources */,
+				5331D6ED24767A10005DC6E9 /* MapVC.swift in Sources */,
 				5331D6E924767A10005DC6E9 /* AppDelegate.swift in Sources */,
+				53E6B63E248294770013FD3D /* PhotoCell.swift in Sources */,
 				5331D6EB24767A10005DC6E9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +396,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RRJMKAXD2H;
 				INFOPLIST_FILE = "Pixcell City/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,6 +416,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RRJMKAXD2H;
 				INFOPLIST_FILE = "Pixcell City/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
