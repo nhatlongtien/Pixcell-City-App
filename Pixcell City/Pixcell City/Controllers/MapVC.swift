@@ -28,6 +28,9 @@ class MapVC: UIViewController, UIGestureRecognizerDelegate {
     let regionRadious:Double = 1000
     var imageUrlArray = [String]()
     var imageArray = [UIImage]()
+    //
+    var photoIdScrect = [Photo]()
+    var photoIdSecretOfImageSelected:Photo?
     var imageSelected:UIImage?
     // MARK: - UI viewController
     override func viewDidLoad() {
@@ -102,8 +105,12 @@ class MapVC: UIViewController, UIGestureRecognizerDelegate {
                     let id = photo["id"] as! String
                     let sever = photo["server"] as! String
                     let secret = photo["secret"] as! String
+                    //
                     let postUrl = "https://farm\(farm!).staticflickr.com/\(sever)/\(id)_\(secret)_w_d.jpg"
                     self.imageUrlArray.append(postUrl)
+                    //
+                    let postPhotoIdSecret = Photo(phtoId: id, phtoSecret: secret)
+                    self.photoIdScrect.append(postPhotoIdSecret)
                 }
                 print(self.imageUrlArray)
                 completionHandler(true)
@@ -260,9 +267,9 @@ extension MapVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollect
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: photoCellIdentifire, for: indexPath) as? PhotoCell{
             //
-            
-            let imageView = UIImageView(image: self.imageArray[indexPath.row])
-            cell.addSubview(imageView)
+            cell.imageView.image = self.imageArray[indexPath.row]
+//            let imageView = UIImageView(image: self.imageArray[indexPath.row])
+//            cell.addSubview(imageView)
             return cell
         }else{
             return UICollectionViewCell()
@@ -270,22 +277,27 @@ extension MapVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollect
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         imageSelected = imageArray[indexPath.row]
+        //
+        photoIdSecretOfImageSelected = Photo(phtoId: photoIdScrect[indexPath.row].phtoId, phtoSecret: photoIdScrect[indexPath.row].phtoSecret)
         performSegue(withIdentifier: "toPopVC", sender: nil)
     }
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        var numberOfColumns:CGFloat = 3
-//        if UIScreen.main.bounds.width > 320 {
-//            numberOfColumns = 4
-//        }
-//        var padding:CGFloat = 40
-//        var spaceBetweenCell:CGFloat = 10
-//        let cellDimension = ((collectionView.bounds.width - padding) - (numberOfColumns - 1)*spaceBetweenCell)/numberOfColumns
-//        return CGSize(width: cellDimension, height: cellDimension)
-//    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        var numberOfColumns:CGFloat = 4
+        if UIScreen.main.bounds.width > 320 {
+            numberOfColumns = 5
+        }
+        var padding:CGFloat = 10
+        var spaceBetweenCell:CGFloat = 10
+        let cellDimension = ((collectionView.bounds.width - padding) - (numberOfColumns - 1)*spaceBetweenCell)/numberOfColumns
+        return CGSize(width: cellDimension, height: cellDimension)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toPopVC"{
             let dest = segue.destination as! PopVC
             dest.imageSelected = imageSelected
+            dest.photoId = photoIdSecretOfImageSelected?.phtoId
+            dest.photoSecret = photoIdSecretOfImageSelected?.phtoSecret
         }
     }
 }

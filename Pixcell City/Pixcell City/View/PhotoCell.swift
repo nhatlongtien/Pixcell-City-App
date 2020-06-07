@@ -9,9 +9,26 @@
 import UIKit
 
 class PhotoCell: UICollectionViewCell {
-    var imageView:UIImageView?
+    let imageView: UIImageView = {
+        let image = UIImageView()
+        image.translatesAutoresizingMaskIntoConstraints = false
+        image.contentMode = .scaleAspectFill
+        image.image = #imageLiteral(resourceName: "noImage")
+        image.layer.cornerRadius = 10
+        image.clipsToBounds = true
+        
+        return image
+    }()
     override init(frame: CGRect) {
         super.init(frame: frame)
+        contentView.addSubview(imageView)
+        //
+        imageView.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
+        imageView.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
+        imageView.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
+        imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        imageView.widthAnchor.constraint(equalToConstant: 50).isActive = true
         
     }
     
